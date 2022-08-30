@@ -32,6 +32,8 @@ public class ProductController {
     @ResponseStatus(HttpStatus.OK)
     public Optional<ProductEntity> searchByIdProduct(@PathVariable("id") Long id) { return productService.toSearchById(id); }
 
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void removeProduct(@PathVariable("id") Long id) {
         productService.toSearchById(id)
                 .map(productEntity -> {
@@ -40,6 +42,8 @@ public class ProductController {
                 });
     }
 
+    @PutMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void updateProduct(@PathVariable("id") Long id, @RequestBody ProductEntity productEntity) {
         productService.toSearchById(id)
                 .map(productEntityBase -> {

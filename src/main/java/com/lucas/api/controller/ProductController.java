@@ -2,6 +2,7 @@ package com.lucas.api.controller;
 
 import com.lucas.api.entity.ProductEntity;
 import com.lucas.api.service.ProductService;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

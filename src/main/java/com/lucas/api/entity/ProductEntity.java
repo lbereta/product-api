@@ -15,7 +15,7 @@ import java.io.Serializable;
 @Builder
 @Entity
 
-public class Product implements Serializable {
+public class ProductEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

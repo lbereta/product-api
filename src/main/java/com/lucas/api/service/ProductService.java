@@ -4,8 +4,6 @@ import com.lucas.api.entity.ProductEntity;
 import com.lucas.api.exception.ProductNotFoundException;
 import com.lucas.api.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
